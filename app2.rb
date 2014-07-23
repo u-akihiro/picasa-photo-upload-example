@@ -17,6 +17,7 @@ req['GData-Version'] = "2"
 # 画像の読み込み
 image = open './image.jpg', 'rb'
 # 画像をBase64に変換
+#Base64エンコードすると弾かれる。バイナリのまま渡すとうまくいく
 #base64 = CGI.escape(Base64.strict_encode64 image.read)
 # Atomを読み込む
 atom = open './atom.txt', 'rb'
